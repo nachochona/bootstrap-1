@@ -2,5 +2,278 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* colores
+    #102327
+    #1b393f
+    #f90
+    #dddd
+    #303030
+*/
+body{
+    background-color: #102327;
+    width: 100%;
+}
+
+
+
+
+
+nav{
+    background-image: linear-gradient(#1b393f, #1b393f)
+}
+nav img{
+    max-width: 80px;
+}
+.caca{
+    padding-left: 1rem;
+}
+.navbar-toggler {
+    margin-right: 1rem;
+    background-color: #f90;
+  }
+
+.menu{
+    background-color: #1b393f;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.menu a:hover{
+    background-color: #f90;
+    
+}
+.barraMenu{
+    background-color: #f90;
+}
+.dropdown-menu{
+    background-color: #dddd;
+}
+
+.navbar-nav .nav-link.active {
+    color: green;
+}
+/* -------------------------------- */
+#grid {
+    margin-top: 120px;
+    display: grid;
+    grid-template-areas:
+        "productos lateral"
+        "servicios lateral"
+        ;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 10fr 10fr;
+}
+.productos{
+    grid-area: productos;
+}
+.servicios{
+    grid-area: servicios;
+}
+section h2{
+    background-color: #ff4e00;
+    background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+    font-size: 40px;
+    color: black; 
+    text-align: center; 
+}
+
+section article {
+    background-color: #303030;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+    align-items: center;
+
+}
+section article:hover{
+    background-color: #ff8800;
+    transition: all 1.5s;
+}
+
+section img {
+    max-width: 200px;
+    margin-top: 20px;
+    border-radius: 25%;
+}
+
+section a{
+    text-decoration: none;
+}
+section h4 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 5px;
+    color: white;
+}
+section h4:hover {
+    color: #303030;
+    transition: all 1.5s;
+}
+
+section p {
+    font-size: 1rem;
+    margin: 5px;
+    max-width: max-content;
+    color: white;
+}
+section button{
+    margin: 15px 0;
+}
+
+.index-productos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.productos {
+    grid-area: productos;
+    background-color: #102327;
+}
+
+.index-servicios {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.servicios {
+    grid-area: servicios;
+    background-color: #102327;
+}
+aside {
+    grid-area: lateral;
+}
+
+.index-pagos {
+    background-color: #303030;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+}
+
+.index-pagos h4 {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+.index-pagos img {
+    max-width: 60px;
+    margin-top: 15px;
+    transform: max width 1s;
+
+}
+.index-pagos img:hover{
+    max-width: 70px;
+    transition: all 0.5s;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+    background-color: rgb(48, 48, 48);
+}
+
+.formulario h4 {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.controls-a {
+    margin: 0.5rem 1.5rem;
+    height: 2rem;
+    width: 80%;
+    border-radius: 4px;
+    border: 2px solid #dddd;
+}
+
+.controls-b {
+    margin: 0.5rem 1.5rem;
+    width: 80%;
+    height: 6rem;
+    border-radius: 4px;
+    border: 2px solid #dddd;
+}
+
+.controls-c {
+    background: linear-gradient(#f90, #ffc56e);
+    margin: 1.5rem;
+    width: 80%;
+    height: 3rem;
+    border: 2px solid #dddd;
+    border-radius: 4px;
+    font-size: 1.5rem;
+}
+.controls-c:hover{
+    background-color: #ff4e00;
+    background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+
+}
+
+
+
+/* ------------FOOTER-------------- */
+footer nav{
+    background-image: linear-gradient(#102327,#102327);
+}
+.foot-logo{
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    list-style: none;
+}
+.foot-logo:hover{
+    color: #f90;
+}
+.img-logo{
+    max-width: 60px;
+    margin-right: 20px;
+}
+.foot-list li{
+    text-align: center;
+    margin-top: 0.5rem;
+}
+.foot-list a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+.foot-list a:hover{
+    background-color: #f90;
+    color: #102327;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:576px){
+    .grid-main{
+        height: auto;
+        grid-template-areas: 
+        "productos"
+        "servicios"
+        "lateral";
+        grid-template-columns: 100%;
+        grid-template-rows: 50vh 50vh 50vh;
+    
+    }
 }

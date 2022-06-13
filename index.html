@@ -1,13 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <title>holis</title>
+
 </head>
+
 <body>
-    
+
+
+  <!----------- NAV BAR -------------->
+  <nav class="navbar navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand caca" href="#"><img src="imagenes/pata.png" alt=""></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end menu" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header barraMenu">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body menu">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Productos
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item" href="#">Alimentos</a></li>
+                <hr class="dropdown-divider">
+                <li><a class="dropdown-item" href="#">Juguetes</a></li>
+                <hr class="dropdown-divider">
+                <li><a class="dropdown-item" href="#">Vestimenta</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Servicios
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item" href="#">Limpieza</a></li>
+                <hr class="dropdown-divider">
+                <li><a class="dropdown-item" href="#">Baños</a></li>
+                <hr class="dropdown-divider">
+                <li><a class="dropdown-item" href="#">Paseos</a></li>
+                <hr class="dropdown-divider">
+                <li><a class="dropdown-item" href="#">Entrenamientos</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Eventos
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item" href="#">Próximos Eventos</a></li>
+                <hr class="dropdown-divider">
+                <li><a class="dropdown-item" href="#">¿Dónde los realizamos?</a></li>
+            </li>
+          </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-------- FIN NAV BAR ----------->
+
+
+  <!---------MAIN-------->
+  <main id="grid">
+    <section class=" productos">
+      <h2>Productos</h2>
+      <div class="index-productos">
+        <article>
+          <img src="imagenes/catChowGatitos.jpg" alt="">
+          <a href="pag/pago.html">
+            <h4>Cat Chow Gatitos</h4>
+          </a>
+          <p>Las caracteristicas del producto</p>
+          <button type="button" class="btn btn-warning">Comprar</button>
+        </article>
+        <article>
+          <img src="imagenes/cupinicJuniorRabbit.jpg" alt="">
+          <a href="pag/pago.html">
+            <h4>Cup Nic Rabbit</h4>
+          </a>
+          <p>Las caracteristicas del producto </p>
+          <button type="button" class="btn btn-warning">Comprar</button>
+        </article>
+        <article>
+          <img src="imagenes/goldfishPeces.jpg" alt="">
+          <a href="pag/pago.html">
+            <h4>Goldfish</h4>
+          </a>
+          <p>Las caracteristicas del producto </p>
+          <button type="button" class="btn btn-warning">Comprar</button>
+        </article>
+        <article>
+          <img src="imagenes/dogChowCachorro.jpg" alt="">
+          <a href="pag/pago.html">
+            <h4>Dog Chow Cachorro</h4>
+          </a>
+          <p>Las caracteristicas del producto</p>
+          <button type="button" class="btn btn-warning">Comprar</button>
+        </article>
+      </div>
+    </section>
+    <section class=" servicios">
+      <h2>Servicios</h2>
+      <div class="index-servicios">
+        <article>
+          <img src="imagenes/dogChowCachorro.jpg" alt="">
+          <a href="pag/pago.html">
+            <h4>Dog Chow Cachorros</h4>
+          </a>
+
+          <p>Las caracteristicas del servicio </p>
+          <button type="button" class="btn btn-warning">Ver más</button>
+        </article>
+        <article>
+          <img src="imagenes/dogChowCachorro.jpg" alt="">
+          <h4>Limpieza de oídos</h4>
+
+          <p>Las caracteristicas del servicio </p>
+          <button type="button" class="btn btn-warning">Ver más</button>
+        </article>
+        <article>
+          <img src="imagenes/baño-perro.jpg">
+          <h4>Baño ara cachorros</h4>
+
+          <p>Las caracteristicas del servicio </p>
+          <button type="button" class="btn btn-warning">Ver más</button>
+        </article>
+        <article>
+          <img src="imagenes/baño-perro.jpg" alt="">
+          <h4>Baño para cachorros</h4>
+
+          <p>Las caracteristicas del servicio </p>
+          <button type="button" class="btn btn-warning">Ver más</button>
+        </article>
+      </div>
+    </section>
+    <aside>
+      <div class="index-pagos">
+        <h4>Métodos de pago</h4>
+        <a href="pag/pago.html"><img class="wow animate__animated animate__shakeX animate__delay-2s"
+            src="imagenes/bank.png" alt=""></a>
+        <a href="pag/pago.html"><img class="wow animate__animated animate__shakeX animate__delay-3s"
+            src="imagenes/credit-card.png" alt=""></a>
+        <a href="pag/pago.html"><img class="wow animate__animated animate__shakeX animate__delay-4s"
+            src="imagenes/pago-en-efectivo.png" alt=""></a>
+        <a href="pag/pago.html"><img class="wow animate__animated animate__shakeX animate__delay-5s"
+            src="imagenes/cupon.png" alt=""></a>
+      </div>
+      <div class="formulario">
+        <h4>Resolvemos tus dudas</h4>
+        <form action="">
+          <input class="controls-a" type="email" placeholder="Ingrese su email">
+          <input class="controls-b" type="text" placeholder="¿En que podemos ayudarlo?">
+          <input class="controls-c wow animate__animated animate__heartBeat animate__delay-1s" type="submit"
+            name="Enviar">
+        </form>
+      </div>
+    </aside>
+  </main>
+
+
+
+
+
+
+
+
+  <!---------FIN DEL MAIN-------->
+
+
+
+
+
+  <!----------FOOTER------------>
+<footer class="text-white py-3">
+  <div class="container">
+    <nav class="row">
+      <a href="#" class="col-4 d-flex foot-logo">
+        <img src="imagenes/pata.png" alt="pata" class="img-logo">
+        CAT & DOG
+      </a>
+      <ul class="col-4 list-unstyled foot-list">
+        <li class="font-wight-bold text-uppercase">¿A dónde quiéres ir?</li>
+        <li><a href="">Productos</a></li>
+        <li><a href="">Servicios</a></li>  
+        <li><a href="">Eventos</a></li>  
+      </ul>
+      <ul class="col-4 list-unstyled foot-list">
+        <li class="font-wigth-bold text-uppercase">Nuestas Redes Sociales</li>
+        <li class="d-flex justify-content-around">
+          <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube"></i></a>
+          <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+        </li>
+      </ul>
+     
+     
+    </nav>
+  </div>
+</footer>
+
+
+
+
+
+
+
+  <script src="js/bootstrap.js"></script>
 </body>
+
 </html>
