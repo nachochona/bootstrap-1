@@ -20,7 +20,7 @@ body {
 
 
 
-
+/* ----------BARRA DE NAVEGACIÓN------ */
 
 nav {
     background-image: linear-gradient(#1b393f, #1b393f)
@@ -62,10 +62,7 @@ nav img {
     color: green;
 }
 
-
 /* -------------------------------- */
-
-
 
 #grid {
     margin-top: 120px;
@@ -262,10 +259,6 @@ aside {
 }
 
 /* ---------------------------------- */
-
-
-
-
 
 
 /* ------------FOOTER-------------- */
