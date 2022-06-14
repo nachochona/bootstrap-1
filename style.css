@@ -224,6 +224,46 @@ aside {
 
 
 
+
+
+
+#grid-productos{
+    margin-top: 120px;
+    display: grid;
+    grid-template-areas: 
+    "pro"
+    "carrusel"
+    ;
+    grid-template-columns: 100%;
+    grid-template-rows: 2fr 1fr;
+    
+}
+
+.productos-p{
+    grid-area: pro;
+    
+}
+.carrusel{
+    margin: 5px 0px;
+    grid-area: carrusel;
+    background-color: red;
+}
+.galeria-productos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.foto-carrousel{
+    max-height: 420px;
+    max-width: 100%;
+    align-items: center;
+}
+
+
+
+
+
+
 /* ------------FOOTER-------------- */
 footer nav{
     background-image: linear-gradient(#102327,#102327);
