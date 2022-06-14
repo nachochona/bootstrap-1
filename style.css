@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: sans-serif;
 }
 
 
@@ -266,14 +266,16 @@ footer nav{
 
 
 @media (max-width:576px){
-    .grid-main{
-        height: auto;
+    #grid{
         grid-template-areas: 
         "productos"
         "servicios"
         "lateral";
         grid-template-columns: 100%;
-        grid-template-rows: 50vh 50vh 50vh;
+        grid-template-rows: 1fr 1fr 0.5fr;
     
     }
+    .formulario input {
+        margin-left: 3rem;
+    } 
 }
