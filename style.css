@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,7 +13,7 @@
     #dddd
     #303030
 */
-body{
+body {
     background-color: #102327;
     width: 100%;
 }
@@ -22,63 +22,76 @@ body{
 
 
 
-nav{
+nav {
     background-image: linear-gradient(#1b393f, #1b393f)
 }
-nav img{
+
+nav img {
     max-width: 80px;
 }
-.caca{
+
+.navbar-brand {
     padding-left: 1rem;
 }
+
 .navbar-toggler {
     margin-right: 1rem;
     background-color: #f90;
-  }
+}
 
-.menu{
+.menu {
     background-color: #1b393f;
     color: white;
     font-size: 1.5rem;
 }
 
-.menu a:hover{
+.menu a:hover {
     background-color: #f90;
-    
+
 }
-.barraMenu{
+
+.barraMenu {
     background-color: #f90;
 }
-.dropdown-menu{
+
+.dropdown-menu {
     background-color: #dddd;
 }
 
 .navbar-nav .nav-link.active {
     color: green;
 }
+
+
 /* -------------------------------- */
+
+
+
 #grid {
     margin-top: 120px;
     display: grid;
     grid-template-areas:
         "productos lateral"
         "servicios lateral"
-        ;
+    ;
     grid-template-columns: 80% 20%;
     grid-template-rows: 10fr 10fr;
 }
-.productos{
+
+.productos {
     grid-area: productos;
 }
-.servicios{
+
+.servicios {
     grid-area: servicios;
 }
-section h2{
+
+section h2 {
     background-color: #ff4e00;
     background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
     font-size: 40px;
-    color: black; 
-    text-align: center; 
+    color: black;
+    text-align: center;
 }
 
 section article {
@@ -89,7 +102,8 @@ section article {
     align-items: center;
 
 }
-section article:hover{
+
+section article:hover {
     background-color: #ff8800;
     transition: all 1.5s;
 }
@@ -100,15 +114,17 @@ section img {
     border-radius: 25%;
 }
 
-section a{
+section a {
     text-decoration: none;
 }
+
 section h4 {
     font-size: 1.5rem;
     text-align: center;
     padding: 5px;
     color: white;
 }
+
 section h4:hover {
     color: #303030;
     transition: all 1.5s;
@@ -120,7 +136,8 @@ section p {
     max-width: max-content;
     color: white;
 }
-section button{
+
+section button {
     margin: 15px 0;
 }
 
@@ -145,6 +162,7 @@ section button{
     grid-area: servicios;
     background-color: #102327;
 }
+
 aside {
     grid-area: lateral;
 }
@@ -170,7 +188,8 @@ aside {
     transform: max width 1s;
 
 }
-.index-pagos img:hover{
+
+.index-pagos img:hover {
     max-width: 70px;
     transition: all 0.5s;
 }
@@ -216,48 +235,33 @@ aside {
     border-radius: 4px;
     font-size: 1.5rem;
 }
-.controls-c:hover{
+
+.controls-c:hover {
     background-color: #ff4e00;
     background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
 
 }
 
-
-
-
-
-
-#grid-productos{
+#grid-productos {
     margin-top: 120px;
-    display: grid;
-    grid-template-areas: 
-    "pro"
-    "carrusel"
-    ;
-    grid-template-columns: 100%;
-    grid-template-rows: 2fr 1fr;
-    
 }
 
-.productos-p{
-    grid-area: pro;
-    
+.carrusel {
+    margin: 10px 0px;
 }
-.carrusel{
-    margin: 5px 0px;
-    grid-area: carrusel;
-    background-color: red;
-}
+
 .galeria-productos {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
 }
-.foto-carrousel{
-    max-height: 420px;
+
+.foto-carrousel {
+    max-height: 80vh;
     max-width: 100%;
-    align-items: center;
 }
+
+/* ---------------------------------- */
 
 
 
@@ -265,38 +269,45 @@ aside {
 
 
 /* ------------FOOTER-------------- */
-footer nav{
-    background-image: linear-gradient(#102327,#102327);
+footer nav {
+    background-image: linear-gradient(#102327, #102327);
 }
-.foot-logo{
+
+.foot-logo {
     align-items: center;
     text-decoration: none;
     color: white;
     font-size: 1.2rem;
     list-style: none;
 }
-.foot-logo:hover{
+
+.foot-logo:hover {
     color: #f90;
 }
-.img-logo{
+
+.img-logo {
     max-width: 60px;
     margin-right: 20px;
 }
-.foot-list li{
+
+.foot-list li {
     text-align: center;
     margin-top: 0.5rem;
 }
-.foot-list a{
+
+.foot-list a {
     list-style: none;
     text-decoration: none;
     color: white;
     padding: 5px;
 }
-.foot-list a:hover{
+
+.foot-list a:hover {
     background-color: #f90;
     color: #102327;
 }
 
+/* ----------FIN DEL FOOTER---------- */
 
 
 
@@ -305,17 +316,19 @@ footer nav{
 
 
 
-@media (max-width:576px){
-    #grid{
-        grid-template-areas: 
-        "productos"
-        "servicios"
-        "lateral";
+
+@media (max-width:576px) {
+    #grid {
+        grid-template-areas:
+            "productos"
+            "servicios"
+            "lateral";
         grid-template-columns: 100%;
         grid-template-rows: 1fr 1fr 0.5fr;
-    
+
     }
+
     .formulario input {
         margin-left: 3rem;
-    } 
+    }
 }
